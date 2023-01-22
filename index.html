@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+         <!--Title-->
+    <title>GTRT | Growtopia</title>
+
+    <!--Page Icon-->
+    <link rel="shortcut icon" type="image" href="img/GTRT.png">
+
+    <!--Align with device-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font-Style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?fammily=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popppins', sans-serif;
+}
+
+        body{
+                background: rgba(0, 0, 0, 0.801) url(img/cherryBlossom.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-blend-mode: darken;
+            }
+
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100vw;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -5vw;
+}
+
+header .logo
+{
+    color: rgb(230, 11, 84);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 1vw;
+    text-shadow: 1px 1px rgb(168, 0, 84);
+}
+
+header ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 2vw;
+}
+
+header ul li a
+{
+    text-decoration:none;
+    padding: 0.2vw 1vw;
+    color: rgb(168, 0, 84);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+header ul li a:hover ,
+.active
+{
+    background:#fff;
+    color: rgb(44, 2, 74);
+}
+
+table{
+    align-items: center;
+    justify-content: center;
+    margin-top: 30vh;
+}
+table tr th p{
+    color:#fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 5vw;
+    word-spacing: 0.3vw;
+}
+
+.join{
+    background: rgba(252, 9, 142, 0.822);
+    margin-top: 4vh;
+    width: 25vw;
+    height: 9vh;
+    border: none;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #dbdbdb;
+}
+
+.join:hover{
+    background: rgba(160, 2, 89, 0.733);
+}
+
+.circle{
+    margin-left: 15vw;
+    height: 25vw;
+    width: 25vw;
+    border-radius: 360px;
+    background:rgba(0, 0, 0, 0.756);
+    background-blend-mode: darken;
+}
+
+.footer{
+    align-items: baseline;
+    background: #000;
+    padding: 2vh;
+    height: 40vh;
+}
+
+.footer h1{
+    color: #dbdbdb;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 1vh;
+    text-decoration: underline;
+}
+
+.footer li{
+    text-decoration: none;
+    margin-top: 3vh;
+}
+
+.footer li a{
+    color: #dbdbdb;
+    text-decoration: none;
+    padding: 1vh;
+}
+
+.footer li a:hover{
+    color: rgba(252, 9, 142, 0.822);
+}
+
+.announcements-pic{
+    width: 96%;
+    height: 50vh;
+    background: url(img/Valentine_week.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2vw;
+    border: .5vh solid rgb(109, 0, 54);
+    border-bottom: none;
+}
+
+.announcements{
+    width: 96%;
+    height: 50vh;
+    background: #dbdbdb;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2vw;
+    margin-top: -4vw;
+    border: .5vh solid rgb(109, 0, 54);
+    border-top: none;
+}
+
+.date{
+    color: #dbdbdb;
+    text-shadow: 1px 1px rgba(116, 0, 64, 0.733);
+    margin-left: 2vw;
+    margin-top: 1vw;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.announce{
+    color: #000;
+    margin-left: 1vw;
+    word-spacing: 1vh;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#publisher{
+    color: rgb(180, 0, 0);
+    text-shadow: 1px 1px rgb(77, 0, 0);
+    font-size: 1rem;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+
+
+#embed{
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+#pub{
+    color: #dbdbdb;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 2vw;
+}
+
+#event-period{
+    text-align: center;
+    color: #888888cc;
+}
+
+@media all and (max-width="50px"){
+    .circle{
+        display: none;
+    }
+}
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <a href="#" class="logo">GTRT</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="ft.html">Infos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://discord.gg/r7aH7VBauZ">Join</a></li>
+            </ul>
+        </header>
+
+        <br>
+
+        <table>
+            <tr>
+                <th>
+                    <p>
+                        Deatloxt, Itzcoc, and Crxtt created <br>
+                        the private growtopia server known as GTRT.<br>
+
+                        It has a ton of features and entertaining activities.<br>
+                         You may even invite buddies over to have fun!<br>
+                         GTRT, formerly RealmTopia! 
+                    </p>
+                    <button class="join" href="https://discord.gg/r7aH7VBauZ">Join Discord</button>
+                </th>
+
+                <th>
+                    <img src="img/GTRT.png" class="circle">
+                </th>
+            </tr>
+        </table>
+        <br>
+
+        <center>
+        <iframe width="450vw" height="250vh" src="https://www.youtube.com/embed/Gl_o187nTxk" id="embed" title="Server Check" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </center>
+
+    <br>
+    
+    <h1 id="pub">
+        News:
+    </h1>
+    <br>
+    <h1 class="date">
+        <!--CRXTT, Update Day Of The Current Message:-->
+        Last Updated: 22/Jan/2023 <span id="publisher">~Ryo</span>
+    </h1>
+
+    <center>
+        <div class="announcements-pic">
+        </div>
+
+
+        <div class="announcements">
+            <p class="announce">
+                <!--CRXTT, Insert Your Message Here Under This:-->
+                Dear Growtopians, this is <span id="event-name">Valentine's Week</span>!<br>
+                Get your golden booty chests and earn some cool items!
+            </p>
+            <br>
+            <p id="event-period">
+                feb-8 to feb-15
+            </p>
+            <br>
+        </div>
+    </center>
+        <div class="footer">
+            <h1>FAQ</h1>
+            <br>
+            <ul>
+                <li><a href="https://discord.gg/r7aH7VBauZ">Join Discord</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">How can i change my account password?</a></li>
+                <li><a href="#">How do i get roles?</a></li>
+        </div>
+        
+
+
+    </body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+        <title>
+            GTRT | Infos
+        </title>
+        <!--Page Icon-->
+    <link rel="shortcut icon" type="image" href="img/GTRT.png">
+        <style>
+    @import url('https://fonts.googleapis.com/css?fammily=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popppins', sans-serif;
+}
+
+        body{
+                background: rgb(25, 83, 83);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-blend-mode: darken;
+            }
+
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100vw;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -5vw;
+}
+
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 1vw;
+    margin-left: 1.5vw;
+
+}
+
+header ul
+{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 2vw;
+}
+
+header ul li a
+{
+    text-decoration:none;
+    padding: 0.2vw 1vw;
+    color: rgba(255, 255, 255, 0.724);
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+header ul li a:hover ,
+.active
+{
+    background:#fff;
+    color: rgb(6, 112, 232);
+}
+
+
+.infos{
+    padding: 5vw;
+    margin-top: 10vh;
+    background: rgba(0, 0, 0, 0.756) url(img/gtvnd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.infos #ytTitle{
+    color: #fff;
+    margin-bottom: 5vh;
+    text-shadow: 2px 2px #000;
+}
+
+
+.infos .roles h1{
+    color:#fff;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    text-shadow: 2px 2px #000;
+}
+
+.infos .roles #Sdev{
+        background: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 70vw;
+        margin-left: 2vw;
+        margin-bottom: 7vh;
+        padding: 2vw;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+}
+
+.infos .roles #Sdev h1{
+    color: goldenrod;
+    font-size: 2rem;
+    margin-top: -1vh;
+    margin-bottom: 4vh;
+}
+
+.infos .roles #Sdev p{
+    color: goldenrod;
+    font-size: 1rem;
+    margin-left: 2vw;
+}
+
+.infos .roles #dev{
+        background: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        width: 70vw;
+        margin-left: 2vw;
+        margin-bottom: 7vh;
+        padding: 2vw;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+}
+
+.infos .roles #dev h1{
+    color: rgb(231, 111, 14);
+    font-size: 2rem;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    margin-left:3vh;
+}
+
+.infos .roles #dev p{
+    color: rgb(231, 111, 14);
+    font-size: 1rem;
+    margin-left: 2vw;
+}
+
+.infos .roles #mod{
+        background: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        width: 70vw;
+        margin-left: 2vw;
+        margin-bottom: 7vh;
+        padding: 2vw;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+}
+
+.infos .roles #mod h1{
+    color: rgb(250, 12, 131);
+    font-size: 2rem;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    margin-left:3vh;
+}
+
+.infos .roles #mod p{
+    color: rgb(173, 0, 87);
+    font-size: 1rem;
+    margin-left: 2vw;
+}
+
+.infos .roles #normal{
+        background: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 70vw;
+        margin-left: 2vw;
+        margin-bottom: 7vh;
+        padding: 2vw;
+        border-radius: 20px;
+        align-items: center;
+        justify-content: center;
+}
+
+.infos .roles #normal h1{
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 1vh;
+    margin-bottom: 4vh;
+    margin-left:3vh;
+}
+
+.infos .roles #normal p{
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 2vw;
+}
+
+#commands{
+    word-spacing: 5px;
+    color: #FFD700;
+}
+
+
+#free{
+    color: rgb(0, 216, 0);
+}
+
+#mprice{
+    color:orange;
+}
+
+#dprice{
+    color:orange
+}
+
+#sdevprice{
+    color: red;
+}
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html" class="logo">GTRT</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ft.html" class="active">Infos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://discord.gg/r7aH7VBauZ">Join</a></li>
+            </ul>
+        </header>
+
+        <br>
+
+        <div class="infos">
+            <div class="roles">
+                <h1>
+                    Here are all the available roles (from the highest to the lowest):
+                </h1>
+                <!--Supper Developper-->
+                <div id="Sdev">
+                    <h1>
+                        Supper Developper
+                    </h1>
+                    <br>
+                    <p>
+                        Price: <span id="sdevprice">15 Diamond Locks</span> <br><br><br>
+                        Commands:<br><br>
+                        <span id="commands">
+                            /GTRTe /msg /status /broadcast /sb /cb /sdb /stats /top /ignore /time /discord /who /me /radio /vips /mods /uba /r 
+                            /go /rgo /pull /kick /ban /wave /dance /love /sleep /facepalm /fp /smh /yes /no /omg  /idk /shrug /trade /pb /furious 
+                            /howcool /howgay /rolleyes /unaccess /report /rate /foldarms /fa /stubborn /fold /fc /gc /gwarp /guild /roles /fixworld 
+                            /togglemods /find /hide /invis /ipcheck /ridcheck /info{player} /banworld /warpto /summon /ban /give /find{item} 
+                            /ghost /invis /danceall /setven /trollall /removetime /fixworld /togglemods /find /hide /invis /ipcheck /ridcheck 
+                            /info{player} /banworld /warpto /summon /ban /removedrop /removeid{block id} /trashall /ghost /1hit /give{item id}
+                            {count} /flag{id} /drop{item id}{count} /givd /buy /banall /unmute /clear /tel {x} {y} /checkpos /setvend{amount} 
+                            /stockmag{amount} /checkid /color /find{item} /resetsb /m{modchat} /x{weather id}
+                            </span>
+                    </p>
+                </div>
+
+                <!--Developper-->
+                <div id="dev">
+                    <h1>
+                        Developper
+                    </h1>
+                    <br>
+                    <p>
+                        Price: <span id="dprice">400 World Locks</span> <br><br><br>
+                        Commands:<br><br>
+                        <span id="commands">
+                            /GTRTe /msg /status /broadcast /sb /cb /sdb /stats /top /ignore /time /discord /who /me /radio /vips /mods /uba /r 
+                            /go /rgo /pull /kick /ban /wave /dance /love /sleep /facepalm /fp /smh /yes /no /omg  /idk /shrug /trade /pb /furious 
+                            /howcool /howgay /rolleyes /unaccess /report /rate /foldarms /fa /stubborn /fold /fc /gc /gwarp /guild /roles /fixworld 
+                            /togglemods /find /hide /invis /ipcheck /ridcheck /info{player} /banworld /warpto /summon /ban /give /find{item} 
+                            /ghost /invis /danceall /setven /trollall /removetime /fixworld /togglemods /find /hide /invis /ipcheck /ridcheck 
+                            /info{player} /banworld /warpto /summon /ban
+                            </span>
+                    </p>
+                </div>
+
+                <!--Moderator-->
+                <div id="mod">
+                    <h1>
+                        Moderator
+                    </h1>
+                    <br>
+                    <p>
+                        Price: <span id="mprice">250 World Locks</span> <br><br><br>
+                        Commands:<br><br>
+                        <span id="commands">
+                            /GTRTe /msg /status /broadcast /sb /cb /sdb /stats /top /ignore /time /discord /who /me /radio /vips /mods /uba /r
+                            /go /rgo /pull /kick /ban /wave /dance /love /sleep /facepalm /fp /smh /yes /no /omg  /idk /shrug /trade /pb /furious
+                            /howcool /howgay /rolleyes /unaccess /report /rate /foldarms /fa /stubborn /fold /fc /gc /gwarp /guild /roles /fixworld
+                            /togglemods /find /hide /invis /ipcheck /ridcheck /info{player} /banworld /warpto /summon /ban
+                            </span>
+                    </p>
+                </div>
+
+                <!--Normal-->
+
+                <div id="normal">
+                    <h1>
+                        Default Player
+                    </h1>
+                    <br>
+                    <p>
+                        Price: <span id="free">FREE!</span> <br><br><br>
+                        Commands:<br><br>
+                        <span id="commands">
+                        /GTRTe /msg /status /broadcast /sb /cb /sdb /stats /top /ignore /time /discord /who /me /radio /vips /mods /uba /r
+                        /go /rgo /pull /kick /ban /wave /dance /love /sleep /facepalm /fp /smh /yes /no /omg  /idk /shrug /trade /pb /furious
+                        /howcool /howgay /rolleyes /unaccess /report /rate /foldarms /fa /stubborn /fold /fc /gc /gwarp /guild /roles
+                        </span>
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </body>
+</html>
