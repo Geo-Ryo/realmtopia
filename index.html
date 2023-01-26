@@ -223,6 +223,14 @@ table tr th p{
     color: #888888cc;
 }
 
+.contact{
+    visibility: hidden;
+}
+
+.contact-opened{
+    visibility: visible;
+}
+
 @media all and (max-width="50px"){
     .circle{
         display: none;
@@ -302,13 +310,216 @@ table tr th p{
             <h1>FAQ</h1>
             <br>
             <ul>
-                <li><a href="https://discord.gg/r7aH7VBauZ">Join Discord</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">How can i change my account password?</a></li>
-                <li><a href="#">How do i get roles?</a></li>
+                <li><button onclick="document.location='https://discord.gg/r7aH7VBauZ'">Join Discord</button></li>
+                <li><button id="contact" onclick="openPopupC()">Contact</button></li>
+                <li><button id="pass">How can i change my account password?</button></li>
+                <li><button id="roles">How do i get roles?</button></li>
+        </div>
+
+
+        <!--Popups-->
+
+        <div class="contact">
+
+            <center>
+                <form class="gform pure-form pure-form-stacked" method="POST" data-email="kh.george.2005@gmail.com"
+                action="https://script.google.com/macros/s/AKfycbzleOtlwPw6eSsFCw948gqQdWFJxI0sZVLFqQKwivwc5uO5oY8R80Z8wbpXGWHXxRcN/exec" style="width: 100%;
+                  height:100%;
+                  background: rgba(0, 0, 0, 0.664);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  margin-top: 17vw;
+                  margin-bottom: 100px;
+                  
+                  background:rgba(0, 0, 0, 0.689);
+                  display:flex;
+                  flex-direction: column;
+                  padding: 2vw 4vw;
+                  width: 80%;
+                  max-width: 500px;
+                  border-radius: 20px;">
+                  <div class="form-elements"><br>
+                    <div style="background:none;border:none;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br>
+                      <h1 class="content-head" style="color: rgb(108, 0, 240);
+                      font-weight: 800;
+                      margin-bottom: 20px;
+                      text-align: center;
+                      text-shadow: 1px 1px rgb(39, 54, 255);font-size: 34px;">Sign Up</h1>
+                      <br><br>
+                      
+                      <input type="text" name="name" placeholder="Name" style="border: 0;
+                      margin: 10px 0;
+                      padding: 20px;
+                      outline: none;
+                      background: #f5f5f5;
+                      font-size: 16px;border-radius: 30px;width: 100%;"/><br><br>
+              
+                      
+                      <input type="email" name="email" placeholder="Email" style="border: 0;
+                      margin: 10px 0;
+                      padding: 20px;
+                      outline: none;
+                      background: #f5f5f5;
+                      font-size: 16px;border-radius: 30px;width: 100%;"/><br><br>
+              
+                      
+                       <input type="password"  name="Password" placeholder="Password" style="border: 0;
+                       margin: 10px 0;
+                       padding: 20px;
+                       outline: none;
+                       background: #f5f5f5;
+                       font-size: 16px;border-radius: 30px;width: 100%;"/><br><br>
+                       <a href="signin.html">Already have an account? Log In</a><br><br>
+                    
+                     
+                      <button style="padding: 15px;
+                      background: #2b1055;
+                      color: #fff;
+                      font-size: 18px;
+                      border: 0;
+                      outline: none;
+                      cursor: pointer;
+                      width: 150px;
+                      margin: 20px auto 0;
+                      border-radius: 30px;">
+                      Submit</button><br>
+                    </div>
+                  </div>
+              
+                  <!-- Thankyou_message --><br>
+                  <div class="thankyou_message" style="display:none;color:white;background:none;border:8px solid rgba(58, 0, 144, 0);border-radius: 40px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
+                    <h1>Sign Up Successful</h1>
+                    <button onclick="closePopupC()" style="text-decoration:none;
+                    padding: 6px 15px;
+                    color: #fff;
+                    border-radius: 20px;">Back</button>
+                  </div>
+                </form>
         </div>
         
 
 
     </body>
+
+    <script>
+
+        let popup = document.getElementById("contact");
+        function openPopupC(){
+            popup.classList.add("contact-opened");
+        }
+
+        function closePopupC(){
+            popup.classList.add("contact");
+        }
+
+(function() {
+  function validEmail(email) {
+    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+    return re.test(email);
+  }
+
+  function validateHuman(honeypot) {
+    if (honeypot) {
+      console.log("Robot Detected!");
+      return true;
+    } else {
+      console.log("Welcome Human!");
+    }
+  }
+  function getFormData(form) {
+    var elements = form.elements;
+
+    var fields = Object.keys(elements).filter(function(k) {
+          return (elements[k].name !== "honeypot");
+    }).map(function(k) {
+      if(elements[k].name !== undefined) {
+        return elements[k].name;
+      }else if(elements[k].length > 0){
+        return elements[k].item(0).name;
+      }
+    }).filter(function(item, pos, self) {
+      return self.indexOf(item) == pos && item;
+    });
+
+    var formData = {};
+    fields.forEach(function(name){
+      var element = elements[name];
+      formData[name] = element.value;
+      if (element.length) {
+        var data = [];
+        for (var i = 0; i < element.length; i++) {
+          var item = element.item(i);
+          if (item.checked || item.selected) {
+            data.push(item.value);
+          }
+        }
+        formData[name] = data.join(', ');
+      }
+    });
+
+    // add form-specific values into the data
+    formData.formDataNameOrder = JSON.stringify(fields);
+    formData.formGoogleSheetName = form.dataset.sheet || "feuille1"; // default sheet name
+    formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+    console.log(formData);
+    return formData;
+  }
+
+  function handleFormSubmit(event) {  
+    event.preventDefault();           
+    var form = event.target;
+    var data = getFormData(form);         
+    if( data.email && !validEmail(data.email) ) {   
+      var invalidEmail = form.querySelector(".email-invalid");
+      if (invalidEmail) {
+        invalidEmail.style.display = "block";
+        return false;
+      }
+    } else {
+      disableAllButtons(form);
+      var url = form.action;
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      xhr.onreadystatechange = function() {
+          console.log(xhr.status, xhr.statusText);
+          console.log(xhr.responseText);
+          var formElements = form.querySelector(".form-elements")
+          if (formElements) {
+            formElements.style.display = "none"; // hide form
+          }
+          var thankYouMessage = form.querySelector(".thankyou_message");
+          if (thankYouMessage) {
+            thankYouMessage.style.display = "block";
+          }
+          return;
+      };
+      var encoded = Object.keys(data).map(function(k) {
+          return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      }).join('&');
+      xhr.send(encoded);
+    }
+  }
+  
+  function loaded() {
+    console.log("Contact form submission handler loaded successfully.");
+    var forms = document.querySelectorAll("form.gform");
+    for (var i = 0; i < forms.length; i++) {
+      forms[i].addEventListener("submit", handleFormSubmit, false);
+    }
+  };
+  document.addEventListener("DOMContentLoaded", loaded, false);
+
+  function disableAllButtons(form) {
+    var buttons = form.querySelectorAll("button");
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].disabled = true;
+    }
+  }
+})();
+
+    
+    </script>
 </html>
